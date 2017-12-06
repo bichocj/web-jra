@@ -1,0 +1,105 @@
+/*
+*   CUSTOM STYLE - WEB JRA
+*
+*/
+
+@primary-color-1: #dcbb55;
+@primary-color-2: #31639c;
+
+/* 
+    Helpers 
+*/
+.icon--md {
+  font-size: 3.8em;
+}
+.wrap-circle-icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    &.facebook {
+        background-color: #3b5998;
+    }
+    &.tsapp {
+        background-color: #009688;
+    }
+    &:hover {
+        color: #fefefe;
+    }
+    i{
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+    }
+}
+.boxed.boxed--md {
+    padding: 1.9em;
+}
+
+.color--primary--02 {
+    // color: #2374ab !important;
+    color: @primary-color--02 !important;    
+    // color: #2c3d55 !important; //#465773
+    // color: #465773 !important; 
+    // color: #006E90 !important; 
+}
+
+.bg--primary--02 {
+    background: @primary-color--02 !important;        
+}
+ul.dots { 
+    list-style-type: disc !important;  
+}
+ul.square {
+    list-style-type: square !important;
+}
+ul.circle {
+    list-style-type: circle !important;
+}
+ul.list {
+    list-style: outside;
+    margin-left: 1.5em;
+}
+/* 
+    GEneral 
+*/
+.bar {
+    //For devices
+    .logo-wrap, 
+    .bar__module {
+        max-height: 45px;
+    }
+    .logo {
+        max-height: 70px;
+        top: -14px;
+    }
+    .logo-light.bg {
+        background-color: white;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .bar {
+        .logo {
+            top: -4px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .bar {
+        .bar__module {
+            max-height: initial;
+        }
+    }
+    .lead {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+}
+
