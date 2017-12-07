@@ -3,8 +3,8 @@
 *
 */
 
-@primary-color-1: #aed200;
-@primary-color-2: #31639c;
+@primary-color-1: #31639c;
+@primary-color-2: #aed200;
 
 /* 
     Helpers 
@@ -42,17 +42,19 @@
     padding: 1.9em;
 }
 
-.color-primary--2 {
-    // color: #2374ab !important;
+/* Colores */
+.color-primary-1 {
+    color: @primary-color-1 !important;    
+}
+.color-primary-2 {
     color: @primary-color-2 !important;    
-    // color: #2c3d55 !important; //#465773
-    // color: #465773 !important; 
-    // color: #006E90 !important; 
 }
 
-.bg--primary--02 {
+.bg--primary--2 {
     background:  @primary-color-2 !important;        
 }
+
+/* Listas */
 ul.dots { 
     list-style-type: disc !important;  
 }
@@ -95,6 +97,10 @@ ul.list {
         .bar__module {
             max-height: initial;
         }
+        .logo {
+            max-height: 50px;
+            top: -2px;
+        }
     }
     .lead {
         font-size: 1.25em;
@@ -104,7 +110,7 @@ ul.list {
 }
 
 /*
-    HOME - INICIO
+    HOME
 */
 #hero {
     hr.short {
@@ -116,5 +122,147 @@ ul.list {
     }
     .typed-text {
         font-weight: 600;
+    }
+}
+
+#laempresa {
+    .feature {
+        h4 {
+            margin-top: 0.5em;
+        }
+        .text-justify {
+            margin-bottom: 1em;
+            @media (min-width: 992px) {
+                height: 180px;           
+            }
+        }
+        hr{
+            border-color: @primary-color-2;
+        }
+    }
+}
+
+#servicios {
+    .feature {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: rgba(255, 255, 255, .25) !important;
+        transition: all 300ms ease-in-out;
+        i {
+            color: @primary-color-2;
+            transition: all 300ms ease-in-out;            
+        }
+        &:hover {
+            background-color: @primary-color-2;
+            border-color: rgba(255, 255, 255, 0) !important;
+            i {
+                color: white;
+            }
+            
+        }
+    }
+}
+
+#porqueescogernos {
+    .masonry {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-2{
+        margin-bottom: 0;
+        i {
+            width: 10%;
+            float: left;
+            margin-top: 10px;
+            // color: @primary-color-2 !important;
+            @media (max-width: 990px) {
+                margin-top: 18px;
+            }
+            @media (max-width: 480px) {
+                text-align: left;
+                font-size: 2em;
+            }
+        }
+        .feature__body {
+            width: 85%;
+            float: right;
+        }
+    }
+}
+
+#contacto {
+    h4 {
+        margin-bottom: 0.25em;
+        i {
+            position: relative;
+            top: 0.15em;
+            margin-right: 3px;
+        }
+        + p {
+            padding-left: 30px;
+        }
+    }
+    .contacto-whatsapp {
+        a {
+            position: relative;
+            color: inherit;
+            text-decoration: none;
+            i {
+                color: #009688;
+                margin-left: 5px;
+            }
+            &:hover {
+                color: @primary-color-1;
+                 i {
+                    color: @primary-color-1;
+                 }
+            }
+        }
+
+    }
+
+    hr,
+    .social-media {
+        margin-left: 30px;
+        position: relative;
+        .wrap-circle-icon{
+            position: absolute;
+            top: -2px;
+            margin-left: 1em;
+            i {
+                font-size: 0.85em;
+            }
+        }
+    }
+    
+    form {
+        margin-top: 1.8em;
+    }
+}
+@media screen and (max-width: 767px){
+    #contacto {
+       [class^="col-xs"] {
+           margin-left: auto;
+           margin-right: auto;
+       }
+       label {
+           font-size: 1em;
+       }
+       p {
+           word-wrap: break-word;
+       }
+    }
+}
+
+/*
+    FOOTER
+*/
+
+footer {
+    .logo-footer {
+        max-height: 75px;
+        background-color: white;
     }
 }
