@@ -45,6 +45,34 @@
     padding: 1.9em;
 }
 
+.feature-2{
+    // margin-bottom: 0;
+    i {
+        width: 15%;
+        float: left;
+            margin-top: 5px;
+        
+        @media (max-width: 990px) {
+            // margin-top: 16px;
+        }
+        @media (max-width: 480px) {
+            text-align: left;
+            font-size: 2em;
+        }
+    }
+    .feature__body {
+        width: 80%;
+        float: right;
+    }
+
+    @media (max-width: 990px) {
+        p:first-of-type {
+            margin-top: initial;
+        }
+
+    }
+}
+
 /* Colores */
 .color-primary-1 {
     color: @primary-color-1 !important;    
@@ -123,7 +151,7 @@ ul.list-icon-bookmark {
         max-height: 45px;
     }
     .logo {
-        max-height: 70px;
+        max-height: 50px;
         top: -14px;
     }
     .logo-light.bg {
@@ -230,33 +258,7 @@ ul.list-icon-bookmark {
     
 }
 
-.feature-2{
-    // margin-bottom: 0;
-    i {
-        width: 15%;
-        float: left;
-            margin-top: 5px;
-        
-        @media (max-width: 990px) {
-            // margin-top: 16px;
-        }
-        @media (max-width: 480px) {
-            text-align: left;
-            font-size: 2em;
-        }
-    }
-    .feature__body {
-        width: 80%;
-        float: right;
-    }
 
-    @media (max-width: 990px) {
-        p:first-of-type {
-            margin-top: initial;
-        }
-
-    }
-}
 #contacto {
     h4 {
         margin-bottom: 0.25em;
