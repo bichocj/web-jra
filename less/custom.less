@@ -9,6 +9,9 @@
 /* 
     Helpers 
 */
+.w--100 {
+    width: 100% !important; 
+}
 .icon--md {
   font-size: 3.8em;
 }
@@ -87,12 +90,14 @@ ul[class*="list-icon"] {
             position: absolute;
             left: -2em;
             top: 0.5em;
+            color: @primary-color-1;
         }
     }
 }
 
 ul.list-icon-yes {
     li {
+        margin-bottom: 0.5em;
         &::before {        
             content: "\ee1e";
             font-weight: bold;
