@@ -144,11 +144,14 @@ ul.list-icon-bookmark {
 /* 
     GEneral 
 */
+.nav-container{
+    min-height: 0 !important;
+}
 .bar {
     //For devices
     .logo-wrap, 
     .bar__module {
-        max-height: 45px;
+        max-height: 35px;
     }
     .logo {
         max-height: 50px;
@@ -156,6 +159,12 @@ ul.list-icon-bookmark {
     }
     .logo-light.bg {
         background-color: white;
+    }
+    //pos-fixed
+    &.pos-fixed {
+        .logo {
+            top: -9px;
+        }
     }
 }
 @media (max-width: 991px) and (min-width: 768px) {
