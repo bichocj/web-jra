@@ -1,0 +1,209 @@
+{% extends 'main/components/layout.html' %}
+{% load static %}
+{% block content %}
+
+            <!-- header -->
+            <section id="header-section" class="cover imagebg height-60" data-overlay="5">  
+                 <!-- data-gradient-bg="#4876BD,#4876BD,#4c7bb4,#8db539,#acd200" -->
+                <div class="background-image-holder background--top"> <img alt="background" src="{% static 'main/images/header-jra.jpg' %}"> </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-9 col-md-7">
+                            <h2>Ingeniería Ambiental: Asesoría y Servicios</h2>
+                            <hr class="short">
+                            <p class="lead"> Asesoría técnica especializada&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5"> <img alt="Image" class="border--round box-shadow-wide" src="{% static 'main/images/servicios/introduccion-ing-ambiental.jpg' %}"> </div>
+                        <div class="col-sm-6">
+                            <div class="switchable__text">
+                                <p class=""> La división de Medio Ambiente busca establecer medidas de prevención o minimización de los impactos negativos generados por la contaminación industrial, estableciendo controles administrativos y de ingeniería. </p> 
+                                <p>   En el caso de producirse daños ambientales, ejecutar medidas de mitigación y remediación, además del manejo de los residuos generados en el proceso de descontaminación. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end introduccion -->
+
+            <!-- CAracteristicas del servicio -->
+            <section class="space--sm bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <div class="feature feature-2 boxed boxed--border"> <i class="icon color--primary icon-Conservation"></i>
+                                <div class="feature__body">
+                                    <p>Asesoría en el levantamiento de observaciones de la autoridad competente o Ministerio del Ambiente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="feature feature-2 boxed boxed--border"> <i class="icon color--primary icon-Conservation"></i>
+                                <div class="feature__body">
+                                    <p> Monitoreo de calidad de aire, emisiones atmosféricas, calidad de agua, efluentes líquidos, urbanos e industriales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <div class="feature feature-2 boxed boxed--border"> <i class="icon color--primary icon-Conservation"></i>
+                                <div class="feature__body">
+                                    <p>Capacitación Ambiental (educación, concientización, normatividad, implementación, etc.)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="feature feature-2 boxed boxed--border"> <i class="icon color--primary icon-Conservation"></i>
+                                <div class="feature__body">
+                                    <p>Evaluación y control de ruido ambiental</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-md-offset-2">
+                            <div class="feature feature-2 boxed boxed--border">
+                                <i class="icon color--primary icon-Conservation"></i>
+                                <div class="feature__body">
+                                    <p>Auditorías ambientales.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Otros servicios -->
+            <section id="otros-servicios" class="space--sm">
+                <div class="container">
+                    <div class="row text-block">
+                        <div class="col-sm-12">
+                            <h2>Otros servicios</h2>
+                        </div>
+                    </div>
+                    <!--end of row-->
+            
+                    <div class="row">
+                        <!-- slider -->
+                        <div class="slider" data-arrows="true" data-paging="true">
+                            <ul class="slides">
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Leafs icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Ingenieria<br>
+                                               Ambiental</h5>
+                                            <a href="/ingenieria-ambiental">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Truck icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Manejo de <br>
+                                                Residuos</h5>
+                                            <a href="/manejo-de-residuos">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Engineering icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Seguridad Industrial y Salud Ocupacional</h5>
+                                            <a href="/seguridad-industrial-salud-ocupacional">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Line-Chart icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Monitoreo <br> ocupacional
+                                            </h5>
+                                            <a href="/monitoreo-ocupacional">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Approved-Window icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Nuevo Software<br>
+                                                de Seguridad</h5>
+                                            <a href="/software-de-seguridad">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Business-Mens icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Servicios de<br>
+                                                Capacitación</h5>
+                                            <a href="/servicios-de-capacitacion">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon--md icon-Road-3"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Señalización y<br>
+                                             Mantenimiento Vial</h5>
+                                            <a href="/senalizacion-mantenimiento-vial">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Medal-2 icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Sistemas de<br> Gestión</h5>
+                                            <a href="/sistemas-de-gestion">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>                                
+                            </ul>
+                            </div?>
+                            <!-- end slider  -->
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+            </section>
+                        
+            <!-- footer -->
+{% endblock %}

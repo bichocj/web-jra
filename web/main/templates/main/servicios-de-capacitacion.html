@@ -1,0 +1,238 @@
+{% extends 'main/components/layout.html' %}
+{% load static %}
+{% block content %}            <!-- Header -->
+            <section id="header-section" class="cover imagebg height-60" data-overlay="5">  
+                 <!-- data-gradient-bg="#4876BD,#4876BD,#4c7bb4,#8db539,#acd200" -->
+                <div class="background-image-holder background--top"> <img alt="background" src="{% static 'main/images/header-jra.jpg'%}"></div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-9 col-md-7">
+                            <h2>Servicios de Capacitación</h2>
+                            <hr class="short">
+                            <p class="lead"> Personal Capacitado</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable feature-large">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5"> <img alt="Image" class="border--round box-shadow-wide" src="{% static 'main/images/servicios/introduccion-capacitacion.jpg'%}"> </div>
+                        <div class="col-sm-6">
+                            <div class="switchable__text">
+                                <p class="lead">
+                                    Nuestra división de Capacitación cuenta con profesionales Especialistas en cada uno de los cursos y temas a desarrollar,
+                                    asegurando de esta manera satisfacer las necesidades de capacitación en las diferentes áreas de la industria, mina y servicios.
+                                </p>
+                                <p class="lead">
+                                    Entre las capacitaciones y cursos que ofrecemos se encuentran:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end introduccion -->
+
+            <!-- CAracteristicas del servicio -->
+            <section class="space--xs bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                            <div class="boxed boxed--border boxed--lg">
+                                <ul class="list list-icon-yes">
+                                    <li>Seguridad Basada en Normas Nacionales.</li>
+                                    <li>Inspecciones de Seguridad.</li>
+                                    <li>Identificación de peligros y Evaluación de riesgos y Controles IPERC.</li>
+                                    <li>Reporte e Investigación de Incidentes </li>
+                                    <li>legislación en Seguridad Minera.</li>
+                                    <li>Trabajos de Alto Riesgo (Altura, Caliente, Espacios confinados).</li>
+                                    <li>Materiales Peligrosos.</li>
+                                    <li>Orden y Limpieza.</li>
+                                    <li>Análisis de Seguridad en el Trabajo AST.</li>
+                                    <li>Manejo Defensivo.</li>
+                                    <li>Primeros Auxilios.</li>
+                                    <li>Uso y Manejo de Extintores, Prevención y Protección contra Incendios.</li>
+                                    <li>Prevención de Accidentes con Gases.</li>
+                                    <li>Seguridad en la Oficina.</li>
+                                    <li>Seguridad con Herramientas Manuales y Eléctricas.</li>
+                                    <li>Seguridad Eléctrica.</li>
+                                    <li>Seguridad Basada en el Comportamiento.</li>
+                                    <li>Lock out -  Tag out (bloqueo y etiquetado de energías).</li>
+                                    <li>Auditoria de sistemas de gestión.</li>
+                                    <li>Identificación de aspectos e impactos ambientales.</li>
+                                    <li>Interpretación de la ley 29783 y DS 005-2012TR Reglamento de seguridad y Salud en el Trabajo.</li>
+                                    <li>Otros según requerimientos y necesidades.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Galeria -->
+            <section id="galleria" class="space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12">
+                            <br>
+                            <h3 class="text-center">Servicios de Capacitación</h3>
+                            <br>
+                            <br>
+            
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-4 mb--1">
+                            <a href="{% static 'main/images/servicios/capacitacion-1.jpg'%}" data-lightbox="Gallery">
+                                <img alt="Thumb" src="{% static 'main/images/servicios/capacitacion-1.jpg'%}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 mb--1">
+                            <a href="{% static 'main/images/servicios/capacitacion-2.jpg'%}" data-lightbox="Gallery">
+                                <img alt="Thumb" src="{% static 'main/images/servicios/capacitacion-2.jpg'%}">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 mb--1">
+                            <a href="{% static 'main/images/servicios/capacitacion-3.jpg'%}" data-lightbox="Gallery">
+                                <img alt="Thumb" src="{% static 'main/images/servicios/capacitacion-3.jpg'%}">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <!--end of row-->
+            
+                </div>
+                <!--end of container-->
+            </section>
+            <!-- end galeria -->
+
+            <!-- Otros servicios -->
+            <section id="otros-servicios" class="space--sm">
+                <div class="container">
+                    <div class="row text-block">
+                        <div class="col-sm-12">
+                            <h2>Otros servicios</h2>
+                        </div>
+                    </div>
+                    <!--end of row-->
+            
+                    <div class="row">
+                        <!-- slider -->
+                        <div class="slider" data-arrows="true" data-paging="true">
+                            <ul class="slides">
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Leafs icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Ingenieria<br>
+                                               Ambiental</h5>
+                                            <a href="/ingenieria-ambiental">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Truck icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Manejo de <br>
+                                                Residuos</h5>
+                                            <a href="/manejo-de-residuos">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Engineering icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Seguridad Industrial y Salud Ocupacional</h5>
+                                            <a href="/seguridad-industrial-salud-ocupacional">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Line-Chart icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Monitoreo <br> ocupacional
+                                            </h5>
+                                            <a href="/monitoreo-ocupacional">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Approved-Window icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Nuevo Software<br>
+                                                de Seguridad</h5>
+                                            <a href="/software-de-seguridad">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Business-Mens icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Servicios de<br>
+                                                Capacitación</h5>
+                                            <a href="/servicios-de-capacitacion">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon--md icon-Road-3"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Señalización y<br>
+                                             Mantenimiento Vial</h5>
+                                            <a href="/senalizacion-mantenimiento-vial">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-3">
+                                    <div class="feature feature-1 text-center">
+                                        <div class="feature__body boxed boxed--border">
+                                            <i class="icon icon-Medal-2 icon--md"></i>
+                                            <br>
+                                            <h5 class="type--uppercase">Sistemas de<br> Gestión</h5>
+                                            <a href="/sistemas-de-gestion">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>                                
+                            </ul>
+                            </div?>
+                            <!-- end slider  -->
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+            </section>
+                        
+            <!-- footer -->
+{% endblock %}         

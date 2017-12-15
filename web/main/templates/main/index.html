@@ -1,5 +1,375 @@
 {% extends 'main/components/layout.html' %}
 {% load static %}
 {% block content %}
-        It works!, you can edit this page from  main/templates/main/index.html      
+            <!-- Hero section -->
+            <section id="hero" class="cover imagebg text-center parallax height-100" data-overlay="4">
+                <div class="background-image-holder"> <img alt="background" src="{% static 'main/images/hero-jra.jpg' %}"> </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7">
+                            <h1> ALTA INGENIERIA A SU SERVICIO </h1>
+                            <hr class="short">
+                            <!-- <p class="lead">&nbsp;De la mano de nuestro equipo de especialistas garantizamos el cumplimiento de las metas de sus proyectos.</p> -->
+                            <div class="typed-headline h2">
+                                <span class=" inline-block">Soluciones integrales en </span><br>
+                                <span class=" inline-block typed-text typed-text--cursor  color-primary-2" data-typed-strings="Sistemas de Gestión, Ingeniería Ambiental, Manejo de Residuos, Seguridad Industrial, Salud Ocupacional, Monitoreo Ocupacional, Servicios de Capacitación, Señalización y Manetenimiento Vial, Software de Gestión">
+                                Limpieza P</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- la empresa -->
+            <!-- <a id="laempresa" class="in-page-link"></a> -->
+            <section id="laempresa" class="bg--secondary text-center testimonial testimonial-1 switchable--switch">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-sm-6 col-md-5 col-md-offset-1">
+                            <div class="switchable__text">
+                                <blockquote> “Somos una empresa peruana comprometida a brindar consultoría y sustentabilidad en materia de calidad, seguridad, salud ocupacional y medio ambiente” </blockquote>
+                                <h5>Gerencia General</h5>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-5 col-md-offset-1">
+                            <img alt="Image" src="{% static 'main/images/la-empresa.jpg' %}"> 
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="feature feature-4 boxed boxed--lg boxed--border">     <i class="color-primary-2 icon icon-Archery-2 icon--md"></i>
+                                <h4>Misión</h4>
+                                <hr>
+                                <p class="text-justify"> Comprometernos a asegurar el éxito del desarrollo de los Proyectos, mediante la integración de los recursos sostenibles y mejora continua. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="feature feature-4 boxed boxed--lg boxed--border">      <i class="color-primary-2 icon icon-Eye-Visible icon--md"></i>
+                                <h4>Visión</h4>
+                                <hr>
+                                <p class="text-justify"> Ser reconocidos en el ámbito nacional como una empresa líder de servicios de alto desempeño, con acciones dirigidas a ofrecer soluciones ambientales, seguridad, calidad e ingeniería, con el más alto grado de profesionalismo dentro de un marco de ética. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="feature feature-4 boxed boxed--lg boxed--border">     <i class="color-primary-2 icon icon-Environmental-3 icon--md"></i>
+                                <h4>Valores</h4>
+                                <hr>
+                                <ul class="list circle text-justify ">
+                                    <li>Compromiso. </li>
+                                    <li>Ética Profesional. </li>
+                                    <li>Excelencia. </li>
+                                    <li>Honestidad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end la empresa -->
+
+            <!-- Servicios -->
+            <!-- <a class="in-page-link" data-scroll-id="serviciostitulo"></a> -->
+            <section id="servicios"  class="text-center bg--dark  bg--primary-1 space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-md-8">
+                            <h2>Nuestros Servicios</h2>
+                            <p class="lead">Brindamos una amplia gama de servicios orientados a satisfacer necesidades actuales con eficiencia, agilidad, un servicio personalizado y confidencialidad a nuestros clientes, en equilibrio con la conservación del Medio Ambiente.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/sistemas-de-gestion" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon-Medal-2 icon--md"></i>
+                                <h5 class="type--uppercase">
+                                    Sistemas de<br> Gestión
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/ingenieria-ambiental" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon-Leafs icon--md"></i>
+                                <h5 class="type--uppercase">Ingenieria<br> Ambiental</h5>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/manejo-de-residuos" class="feature boxed boxed--border border--round">
+                                <i class="icon icon-Truck icon--md"></i>
+                                <h5 class="type--uppercase">Manejo de
+                                    <br> Residuos</h5>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/seguridad-industrial-salud-ocupacional" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon-Engineering icon--md"></i>
+                                <h5 class="type--uppercase">Seguridad Industrial y Salud Ocupacional</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/monitoreo-ocupacional" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon-Line-Chart icon--md"></i>
+                                <h5 class="type--uppercase">MONITOREO<br>Ocupacional</h5>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/software-de-seguridad" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon-Approved-Window icon--md"></i>
+                                <h5 class="type--uppercase">Nuevo Software <br> de Seguridad</h5>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/servicios-de-capacitacion" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon-Business-Mens icon--md"></i>
+                                <h5 class="type--uppercase">Servicios de <br>Capacitación</h5>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="/senalizacion-mantenimiento-vial" class="feature boxed boxed--border border--round"> 
+                                <i class="icon icon--md icon-Road-3"></i>
+                                <h5 class="type--uppercase">Señalización y<br> Mantenimiento Vial</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Por que escogernos -->
+            <section id="porqueescogernos" class="space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="text-center">Por qué escogernos</h2>
+                            <br>
+                        </div>
+                    </div>
+            
+                    <div class="masonry">
+                        <div class="masonry__container">
+                            <div class="masonry__item col-sm-6">
+                                <div class="feature feature-2 boxed boxed--border">
+                                    <i class="icon icon-Arrow-Right2 color-primary-2"></i>
+                                    <div class="feature__body">
+                                        <p>
+                                            JRA ha sido la encargada de gestionar la C
+                                            <b>ertificación OHSAS 18001</b> de Protección Ambiental, demostrando nuestra capacidad para
+                                            ayudar a las organizaciones a gestionar sus sistemas y sus riesgos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+            
+                            <div class="masonry__item col-sm-6">
+                                <div class="feature feature-2 boxed boxed--border">
+                                    <i class="icon icon-Arrow-Right2 color-primary-2"></i>
+                                    <div class="feature__body">
+                                        <p>
+                                            Contamos con personal experimentado.
+                                            <br> Nuestro Staff esta compuesto de un equipo de especialistas de distintas áreas para brindar
+                                            un servicio integral.
+                                        </p>
+            
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+            
+                            <div class="masonry__item col-sm-6">
+                                <div class="feature feature-2 boxed boxed--border">
+                                    <i class="icon icon-Arrow-Right2 color-primary-2"></i>
+                                    <div class="feature__body">
+                                        <p>
+                                            Nuestra labor de servicios se apoya en la experiencia de trabajar con clientes exigentes, tanto en ámbitos públicos y privados.
+                                        </p>
+            
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+            
+                            <div class="masonry__item col-sm-6">
+                                <div class="feature feature-2 boxed boxed--border">
+                                    <i class="icon icon-Arrow-Right2 color-primary-2"></i>
+                                    <div class="feature__body">
+                                        <p>
+                                            Nuestro compromiso es brindar un servicio de calidad que logré satisfacer a nuestros clientes y ayude a la consecución de
+                                            sus objetivos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+            
+                            <div class="masonry__item col-sm-6">
+                                <div class="feature feature-2 boxed boxed--border">
+                                    <i class="icon icon-Arrow-Right2 color-primary-2"></i>
+                                    <div class="feature__body">
+                                        <p>
+                                            Garantizamos la confidencialidad de todos nuestros clientes, acorde a nuestra política y ética profesional.
+                                        </p>
+            
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section -->
+
+            <!-- Clientes -->
+            <!-- <a id="clientestitulo" class="in-page-link" data-scroll-id="clientestitulo"></a> -->
+            <section id="clientes" class="text-center bg--secondary space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12">
+                            <br>
+                            <h2>Nuestros Clientes</h2>
+                            <p> Nuestra labor de servicios se apoya en la experiencia de trabajar con clientes más exigentes,
+                            <br> y sobre todo, en un firme compromiso con la calidad de servicio.
+                            <br> Clientes de primer nivel en todos los ámbitos públicos y privados, confían en nosotros.</p>
+                            <br>
+                            <br>
+                                
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <ul class="list-logos list-inline social-list text-center">
+                            <li>
+                                <img alt="Gytres" class="image--xs" src="{% static 'main/images/logo-clientes/logo-gytres.png' %}">
+                            </li>
+                            <li>
+                                <img alt="Colegio San Francisco de Asis" class="image--xs" src="{% static 'main/images/logo-clientes/colegio-san-francisco-asis.png' %}">
+                            </li>
+                        </ul>
+                        <br>                                                    
+                    </div>
+                </div>
+            </section>
+                
+            <!-- Contact section-->
+            <section id="contacto" class="switchable">
+                <div class="container">
+                    <div class="row">
+                        <div class=" text-center col-sm-12">
+                            <h2>Contáctenos</h2>
+                            <p class="lead">
+                                Eficiencia, agilidad, un servicio personalizado y confidencialidad <br class="hidden-xs"> es lo que ofrecemos a nuestros clientes.
+                            </p>
+            
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-10 col-sm-5 col-sm-offset-0">
+                            <h4>
+                                <i class="icon icon-Email icon--xs color-primary-2"></i> Email
+                            </h4>
+                            <p>
+                                informes@grupoproteccionambiental.com
+                                <br>jraservam@gmail.com
+
+            
+                            </p>
+                            <h4>
+                                <i class="icon icon-Phone-2 icon--xs color-primary-2"></i>
+                                Teléfonos
+                            </h4>
+                            <p class="contacto-whatsapp">
+                                <b>Central: </b> 054 441823
+                                <br>
+                                <b>Celular: </b>
+                                <a href="https://api.whatsapp.com/send?phone=51959470743" target="_blank" title="Whatsapp de Protección Ambiental">
+                                    <i class=" socicon-whatsapp"></i> 959470743
+                                </a>
+                                - 
+                                <a href="https://api.whatsapp.com/send?phone=51980060691" target="_blank" title="Whatsapp de Protección Ambiental">
+                                    <i class=" socicon-whatsapp"></i> 980060691
+                                </a>
+            
+                            </p>
+            
+                            <h4>
+                                <i class="icon icon-Map-Marker2 icon--xs color-primary-2"></i>
+                                Oficinas
+                            </h4>
+            
+                            <p>
+                                <b>Arequipa: </b>Av. Las Americas S/N Urb. Caminos Del Inca F3 - Hunter
+                                <br>
+                                <b>Moquegua: </b>Ciudad Nueva H-32 Dpto. 8 Pacocha - Ilo</p>
+            
+                            <hr class="short">
+            
+                            <div class="social-media">
+                                Encuéntrenos también en
+                                <!-- <b>Facebook: </b>  -->
+                                <a class="wrap-circle-icon facebook" href="https://web.facebook.com/empresadeconsultoriajra/" target="_blank" title="Facebook de JRA">
+                                    <i class=" socicon-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 col-sm-6 col-sm-offset-0 ">
+                            <div class="row">
+                                <form class="form-email" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label>Nombre y Apellidos (*)</label>
+                                        <input type="text" name="Name" class="validate-required" />
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label>Empresa</label>
+                                        <input type="text" name="Empresa" class="" />
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label>Teléfono (*)</label>
+                                        <input type="text" name="Telefono" class="validate-required" />
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label>Correo Electrónico (*)</label>
+                                        <input type="email" name="email" class="validate-required validate-email" />
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <label>Mensaje (*)</label>
+                                        <textarea rows="4" name="Message" class="validate-required"></textarea>
+                                    </div>
+                                    <div class="col-sm-5 col-md-4 col-xs-6">
+                                        <br>
+                                        <button type="submit" class="btn btn-primary btn--primary-1 type--uppercase">Enviar Mensaje</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--end of row-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <!-- End Contact section-->
+
+             <!-- MAPA -->
+            <!-- <a id="mapa" class="in-page-link"></a> -->
+            <section id="mapa" class="unpad">
+                <div class="map-container"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.1872007731649!2d-71.56215405264687!3d-16.43752912319326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424aa4d8e17915%3A0xd9adf25999cc55d3!2sProteccion+Ambiental!5e1!3m2!1ses-419!2spe!4v1511308555535"></iframe> </div>
+            </section>
+            <!-- end Mapa -->
+
+          
+            <!-- footer -->
 {% endblock %}

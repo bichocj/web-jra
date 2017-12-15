@@ -1,10 +1,54 @@
 {% load static %}
 
         <footer class="text-center space--xs footer-5 bg--dark">
-            you can set your footer from main/templates/main/componentes/footer.html
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <br>
+                        <div>
+                            <img alt="Image" class="logo-footer" src="{% static 'main/images/LOGO-JRA-800.png' %}">
+                        </div>
+                        <div>
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="https://web.facebook.com/empresadeconsultoriajra/" target="_blank" title="Facebook de Protección Ambiental">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div>
+                            <span class="type--fine-print">©
+                                <span class="update-year">2017</span> JRA S.A
+                                <br> Desarrollado por
+                            </span>
+                            <a class="type--fine-print atix-link" href="http://www.atixplus.com" target="_blank">ATIX PLUS</a>
+        
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
         </footer>
-          <!-- End Footer -->
-    </div>
-    <!-- End Main COntainer  -->
-</body>
+        <!-- end footer -->
+        </div>
+        <!-- End Main container -->
+        
+        <a class="back-to-top inner-link active" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <!-- Scripts -->
+        <script src="{% static 'main/js/jquery-3.1.1.min.js' %}"></script>
+        <script src="{% static 'main/js/flickity.min.js' %}"></script>
+        <script src="{% static 'main/js/typed.min.js' %}"></script>
+        <script src="{% static 'main/js/parallax.js' %}"></script>
+        <script src="{% static 'main/js/smooth-scroll.min.js' %}"></script>
+        <script src="{% static 'main/js/isotope.min.js' %}"></script>
+        <script src="{% static 'main/js/lightbox.min.js' %}"></script>
+        <script src="{% static 'main/js/scripts.js' %}"></script>
+        
+    </body>
+        
 </html>
