@@ -1,6 +1,6 @@
 {
     "less.compile": {
         "compress": true,
-        "out": "${workspaceRoot}\\css\\" // false => DON'T output .css files (overridable per-file, see below)
+        "out": "${workspaceRoot}\\web\\main\\static\\main\\css\\" // false => DON'T output .css files (overridable per-file, see below)
     },
 }
