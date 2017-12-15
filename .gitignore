@@ -1,3 +1,4 @@
-.vscode/
 .venv
-
+web/media/
+.vscode
+.vscode/settings.json
