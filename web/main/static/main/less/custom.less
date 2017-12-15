@@ -397,6 +397,37 @@ article{
     
 }
 
+//REsultado de busqueda
+// Search Result
+#search_submit { //input
+    &:hover {
+        transform: none;
+        opacity: 0.8;
+    }
+}
+article#search-result{
+    //Titulo
+    h2 {
+        span {
+            font-weight: 400;
+        }
+    }
+    //Formulario de busquea
+    .input-query  {
+        @media (min-width: 768px){
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+    }
+    #search_submit {
+        @media (min-width: 768px) {
+            margin-top: 0;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+    }
+}
 
 .pagination {
     a {
@@ -412,15 +443,15 @@ article{
             text-decoration: none !important;
         }
     }
-    ol {
-        li {
-            &.pagination__current { 
-                background: @primary-color-2;
-                color: white;
-                border-color: transparent;
-            }
-        }
-    }
+    // ol {
+    //     li {
+    //         &.pagination__current { 
+    //             background: @primary-color-2;
+    //             color: white;
+    //             border-color: transparent;
+    //         }
+    //     }
+    // }
 }
 #more-articles{
     a.block {

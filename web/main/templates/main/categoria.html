@@ -19,49 +19,40 @@
                 </div>
             </section>
             
-            <section id="post-list" class="space--sm">
+            <<section class="space--sm">
                 <div class="container">
                     <div class="row">
                         <!-- list-posts -->
                         <div class="col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-0">
-                            <div class="masonry-blog-list">
-                                {% get_last_posts 2 page|default:1 as posts %} 
-                                {% for post in posts %} 
-
-                                <article class="masonry__item"
-                                    data-masonry-filter="Web Design">
-                                    <div class="article__title">
-                                        <a href="{% url 'main:show_post' post.id %}">
-                                            <h2>{{post.title}}</h2>
-                                        </a>
-                                        <span>{{post.publish_at|date:'j'}} de {{post.publish_at|date:'F'}} </span>
-                                        en
-                                        <span>
-                                            <a href="#" class="category">{{post.category.name}}</a>
-                                        </span>
-                                    </div>
-                                    <!--end article title-->
-                                    <div class="article__body">
-                                        <a href="{% url 'main:show_post' post.id %}">
-                                            <img alt="Image" src="{{ post.image.url }}" />
-                                        </a>
-                                        <p>
-                                            {{post.content|safe|truncatewords_html:20}}
-                                        </p>
-                                        <a href="{% url 'main:show_post' post.id %}" class="color-primary-2">Continuar leyendo &raquo;</a>
-                                    </div>
-                                </article>
-                                {% endfor %}
-                                
-                                <!--Paginator-->
-                                <br>
-                                {% include 'main/components/paginator.html' with objects=posts %}
-                            </div>
-                            <!--end masonry-->
+                            <article id="list-category">
+                                <div class="article__title">
+                                    <h2>Nombre de la categoría</h2>
+                                    <p>Artículo(s) que pertenecen a la cateogría Nombre de la Categoría</p>
+                                </div>
+                                <div class="article__body">
+                                    <ul class="list circle">
+                                        <li>
+                                            <a href="#" title="Título del Post">Título del Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Título del Post">Título del Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Título del Post">Título del Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Título del Post">Título del Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Título del Post">Título del Post</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
                         </div>
             
                         <!-- sidebar -->
-                        <div class="col-md-4 col-md-push-1 col-xs-12 ">
+                        <div class="col-md-4 col-md-push-1 col-xs-12">
                             <br class="visible-xs visible-sm">
                             <br class="visible-xs visible-sm">
             
@@ -77,8 +68,8 @@
                                 <div class="sidebar__widget">
                                     <h5>Sobre el Blog</h5>
                                     <p>
-                                        El blog de JRA S.A es un espacio donde Ud. puede encontrar información variada sobre temas relacionados a nuestro ámbito
-                                        de trabajo.
+                                        El blog de Protección Ambiental es un espacio creado para compartir información útil y variada sobre temas relacionados a
+                                        nuestro ámbito de trabajo.
                                     </p>
                                 </div>
                                 <!--end widget-->
@@ -92,8 +83,7 @@
                                         {% endfor %}
                                     </ul>
                                 </div>
-                                <!--end widget-->
-                                
+            
                             </div>
                         </div>
                     </div>
@@ -101,7 +91,5 @@
                 </div>
                 <!--end of container-->
             </section>
-                        
-            <!-- footer -->
-         {% endblock %}
-        
+            
+{% endblock %}
