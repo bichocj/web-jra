@@ -151,6 +151,11 @@ input[type], textarea, select {
 //     border-color: #76abe9;
 // }
 
+/* Boxed modules */
+.boxed.boxed--border {
+    // border-color: @color-gray;
+}
+
 /* 
     GEneral 
 */
@@ -385,8 +390,19 @@ footer {
 #otros-servicios {
     .slider {
         .feature {
+            .icon {
+                transition: color ease 200ms;
+            }
             a {
                 color: @primary-color-2;
+            }
+            &:hover {
+                .boxed--border {
+                    border-color: @primary-color-2;
+                }
+                .icon  {
+                    color: @primary-color-2;
+                }
             }
         }
     }
