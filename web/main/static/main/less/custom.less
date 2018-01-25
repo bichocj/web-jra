@@ -5,10 +5,12 @@
 
 @primary-color-1: #31639c;
 @primary-color-2: #aed200;
+@color-gray: #ccc;
 
 /* 
     Helpers 
 */
+// * {outline: 1px solid rgba(255, 0, 0, .25)}
 .w--100 {
     width: 100% !important; 
 }
@@ -140,6 +142,14 @@ ul.list-icon-bookmark {
         }
     }
 }
+
+/* Forms elements */
+input[type], textarea, select {
+    border-color: @color-gray ;
+}
+// input[type]:focus, select:focus, textarea:focus {
+//     border-color: #76abe9;
+// }
 
 /* 
     GEneral 
